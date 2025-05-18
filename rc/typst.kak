@@ -50,7 +50,7 @@ add-highlighter shared/typst/content/math region '\$' '(?<!\\)\$' ref typst/math
 add-highlighter shared/typst/code/regex default-region group
 add-highlighter shared/typst/code/regex/hash regex '#[\w.-]+' 0:meta
 add-highlighter shared/typst/code/regex/keyword regex (?!-)(import|show|for|let|if||else)(?!-) 1:keyword
-add-highlighter shared/typst/code/regex/value regex \b(\d+(em|deg|pt|px)?|true|false)\b 1:value
+add-highlighter shared/typst/code/regex/value regex \b(\d+(em|deg|pt|px)?|true|false|none)\b 1:value
 add-highlighter shared/typst/code/string region '"' '"' fill string
 add-highlighter shared/typst/code/block-comment region -recurse '/\*' '/\*' '\*/' fill comment
 add-highlighter shared/typst/code/line-default region '//' '$' fill comment
