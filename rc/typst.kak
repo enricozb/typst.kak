@@ -32,6 +32,9 @@ add-highlighter shared/typst/code regions
 add-highlighter shared/typst/math regions
 
 # --- content ---
+add-highlighter shared/typst/content/regex default-region group
+add-highlighter shared/typst/content/regex/label regex '<[a-zA-Z0-9:_-]+>' 0:header
+add-highlighter shared/typst/content/regex/ref regex '@[a-zA-Z0-9:_-]+' 0:header
 add-highlighter shared/typst/content/heading region '^\h*=+' '$' fill header
 add-highlighter shared/typst/content/block-comment region -recurse '/\*' '/\*' '\*/' fill comment
 add-highlighter shared/typst/content/line-default region '//' '$' fill comment
