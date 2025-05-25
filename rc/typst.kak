@@ -40,6 +40,7 @@ add-highlighter shared/typst/content/block-comment region -recurse '/\*' '/\*' '
 add-highlighter shared/typst/content/line-default region '//' '$' fill comment
 add-highlighter shared/typst/content/strong region '\*' '\*' fill +b
 add-highlighter shared/typst/content/emphasis region '_' '_' fill +i
+add-highlighter shared/typst/content/code-``` region '```' '```' fill meta
 add-highlighter shared/typst/content/code-( region -recurse '\(' '\(' '\)' ref typst/code
 add-highlighter shared/typst/content/code-{ region -recurse '\{' '\{' '\}' ref typst/code
 add-highlighter shared/typst/content/import region '#import' '\n' ref typst/code
